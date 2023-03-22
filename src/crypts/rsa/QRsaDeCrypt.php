@@ -26,14 +26,15 @@ final class QRsaDeCrypt
      * decrypt
      *
      * @param string $encrypt
+     * @param string $key
      * @return string
-     * @throws
+     * @throws QException
      * @author 吴荣超
      * @date   2023-02-03 20:16
      */
-    public static function decrypt(string $encrypt): string
+    public static function decrypt(string $encrypt, string $key): string
     {
-        $privateKey = openssl_pkey_get_private(QRsaKey::PRIVATE_KEY);
+        $privateKey = openssl_pkey_get_private($key);
         $result = openssl_private_decrypt(base64_decode($encrypt), $decrypt, $privateKey);
         if (false === $result)
             throw new QException('解密失败:' . $encrypt);

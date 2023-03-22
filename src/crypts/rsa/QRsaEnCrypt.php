@@ -24,13 +24,14 @@ final class QRsaEnCrypt
      * encrypt
      *
      * @param string $string
+     * @param string $key
      * @return string
      * @author 吴荣超
      * @date   2023-02-03 20:19
      */
-    public static function encrypt(string $string): string
+    public static function encrypt(string $string, string $key): string
     {
-        $publicKey = openssl_pkey_get_public(QRsaKey::PUBLIC_KEY);
+        $publicKey = openssl_pkey_get_public($key);
         openssl_public_encrypt($string, $encrypt, $publicKey);
         return base64_encode($encrypt);
     }
