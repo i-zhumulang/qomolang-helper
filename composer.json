@@ -2,7 +2,7 @@
     "name": "qomolang/helper",
     "description": "Qomolang OS project helper",
     "type": "library",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "require": {
         "php": ">=7.4",
         "ext-openssl": "*"
