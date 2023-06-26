@@ -15,18 +15,18 @@ namespace Qomolang\Helper\helpers;
 /**
  * Class QResult
  *
- * @package Os\Helper\helper
+ * @package Qomolang\Helper\helper
  * @author 吴荣超
  * @date   2023-06-26 17:35
  */
 final class QResult
 {
-    const FLAG = 'flag';
-    const CODE = 'code';
-    const MSG = 'message';
-    const DATA = 'data';
-    const SUCCESS = 'Success';
-    const FAILURE = 'Failure';
+    const KEY_FLAG = 'flag';
+    const KEY_CODE = 'code';
+    const KEY_MESSAGE = 'message';
+    const KEY_DATA = 'data';
+    const VAL_CODE_SUCCESS = 'Success';
+    const VAL_CODE_FAILURE = 'Failure';
 
     /**
      * @var string
@@ -162,10 +162,10 @@ final class QResult
     public static function send(): array
     {
         return [
-            self::FLAG => self::$flag,
-            self::CODE => self::$code,
-            self::MSG => self::$msg,
-            self::DATA => self::$data
+            self::KEY_FLAG => self::$flag,
+            self::KEY_CODE => self::$code,
+            self::KEY_MESSAGE => self::$msg,
+            self::KEY_DATA => self::$data
         ];
     }
 
@@ -186,10 +186,10 @@ final class QResult
         }
 
         return [
-            self::FLAG => self::SUCCESS,
-            self::CODE => self::$code,
-            self::MSG => $value,
-            self::DATA => $data
+            self::KEY_FLAG => self::VAL_CODE_SUCCESS,
+            self::KEY_CODE => self::$code,
+            self::KEY_MESSAGE => $value,
+            self::KEY_DATA => $data
         ];
     }
 
@@ -209,10 +209,10 @@ final class QResult
             $value = '';
         }
         return [
-            self::FLAG => self::FAILURE,
-            self::CODE => self::$code,
-            self::MSG => $value,
-            self::DATA => $data
+            self::KEY_FLAG => self::VAL_CODE_FAILURE,
+            self::KEY_CODE => self::$code,
+            self::KEY_MESSAGE => $value,
+            self::KEY_DATA => $data
         ];
     }
 }

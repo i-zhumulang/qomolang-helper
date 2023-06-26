@@ -10,11 +10,11 @@
 // +----------------------------------------------------------------------
 declare(strict_types=1);
 
-namespace Os\Helper\traits;
+namespace Qomolang\Helper\traits;
 
 /**
  * Trait QParamsTrait
- * @package Os\Helper\traits
+ * @package Qomolang\Helper\traits
  * @author 吴荣超
  * @date   2023-06-26 17:52
  */

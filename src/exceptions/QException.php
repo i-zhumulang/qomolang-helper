@@ -10,14 +10,14 @@
 // +----------------------------------------------------------------------
 declare(strict_types=1);
 
-namespace Os\Helper\exceptions;
+namespace Qomolang\Helper\exceptions;
 
 use Exception;
 
 /**
  * Class QException
  *
- * @package Os\Helper\exceptions
+ * @package Qomolang\Helper\exceptions
  * @author 吴荣超
  * @date   2023-06-26 17:53
  */
