@@ -6,8 +6,9 @@
 // +----------------------------------------------------------------------
 // | Author: 吴荣超
 // +----------------------------------------------------------------------
-// | Date  : 2023-03-22 10:40
+// | Date  : 2023-06-26 17:47
 // +----------------------------------------------------------------------
+declare(strict_types=1);
 
 namespace Qomolang\Helper\helpers;
 
@@ -16,7 +17,7 @@ namespace Qomolang\Helper\helpers;
  *
  * @package Qomolang\Helper\helpers
  * @author 吴荣超
- * @date   2023-03-22 10:40
+ * @date   2023-06-26 17:47
  */
 final class QString
 {
@@ -24,7 +25,7 @@ final class QString
      * QString constructor.
      *
      * @author 吴荣超
-     * @date   2023-03-22 10:40
+     * @date   2023-06-26 17:48
      */
     private function __construct()
     {
@@ -35,7 +36,7 @@ final class QString
      * __clone
      *
      * @author 吴荣超
-     * @date   2023-03-22 10:40
+     * @date   2023-06-26 17:48
      */
     private function __clone()
     {
@@ -48,7 +49,7 @@ final class QString
      * @param int $length
      * @return string
      * @author 吴荣超
-     * @date   2023-03-22 10:40
+     * @date   2023-06-26 17:48
      */
     public static function getSpecifyLengthString(int $length = 128): string
     {

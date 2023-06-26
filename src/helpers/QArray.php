@@ -6,8 +6,9 @@
 // +----------------------------------------------------------------------
 // | Author: 吴荣超
 // +----------------------------------------------------------------------
-// | Date  : 2023-03-22 10:39
+// | Date  : 2023-06-26 17:42
 // +----------------------------------------------------------------------
+declare(strict_types=1);
 
 namespace Qomolang\Helper\helpers;
 
@@ -16,10 +17,32 @@ namespace Qomolang\Helper\helpers;
  *
  * @package Qomolang\Helper\helpers
  * @author 吴荣超
- * @date   2023-03-22 10:39
+ * @date   2023-06-26 17:42
  */
 final class QArray
 {
+    /**
+     * QArray constructor.
+     *
+     * @author 吴荣超
+     * @date   2023-06-26 17:43
+     */
+    private function __construct()
+    {
+
+    }
+
+    /**
+     * __clone
+     *
+     * @author 吴荣超
+     * @date   2023-06-26 17:43
+     */
+    private function __clone()
+    {
+
+    }
+
     /**
      * 数组转树形结构
      *
@@ -30,7 +53,7 @@ final class QArray
      * @param string $child
      * @return array
      * @author 吴荣超
-     * @date   2023-03-22 10:39
+     * @date   2023-06-26 17:43
      */
     public static function arrayToTree(array $list, $root = 0, $pk = 'id', $pid = 'parent_id', $child = 'children'): array
     {
@@ -67,7 +90,7 @@ final class QArray
      * @param string $childKey
      * @return array
      * @author 吴荣超
-     * @date   2023-03-22 10:39
+     * @date   2023-06-26 17:43
      */
     public static function treeToArray(array $tree, $level = 0, $childKey = 'children')
     {

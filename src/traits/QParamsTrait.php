@@ -6,23 +6,24 @@
 // +----------------------------------------------------------------------
 // | Author: 吴荣超
 // +----------------------------------------------------------------------
-// | Date  : 2023-03-22 11:25
+// | Date  : 2023-06-26 17:52
 // +----------------------------------------------------------------------
+declare(strict_types=1);
 
-namespace Qomolang\Helper\traits;
+namespace Os\Helper\traits;
 
 /**
  * Trait QParamsTrait
- * @package Qomolang\Helper\traits
+ * @package Os\Helper\traits
  * @author 吴荣超
- * @date   2023-03-22 11:25
+ * @date   2023-06-26 17:52
  */
 trait QParamsTrait
 {
     /**
      * @var array
      * @author 吴荣超
-     * @date   2023-03-22 11:25
+     * @date   2023-06-26 17:52
      */
     protected array $params;
 
@@ -31,7 +32,7 @@ trait QParamsTrait
      *
      * @param array $params
      * @author 吴荣超
-     * @date   2023-03-22 11:25
+     * @date   2023-06-26 17:52
      */
     public function setParams(array $params): void
     {
@@ -44,7 +45,7 @@ trait QParamsTrait
      * @param string|null $key
      * @return array|mixed|null
      * @author 吴荣超
-     * @date   2023-03-22 11:25
+     * @date   2023-06-26 17:52
      */
     public function getParams(string $key = null)
     {

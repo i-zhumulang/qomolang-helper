@@ -4,17 +4,17 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit71de02544e7e755108cb45b07bd85d3e
+class ComposerStaticInitb205e12c575fd3f4f27cdb3cb9cd0591
 {
     public static $prefixLengthsPsr4 = array (
-        'Q' => 
+        'O' => 
         array (
-            'Qomolang\\Helper\\' => 16,
+            'Os\\Helper\\' => 10,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Qomolang\\Helper\\' => 
+        'Os\\Helper\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -27,9 +27,9 @@ class ComposerStaticInit71de02544e7e755108cb45b07bd85d3e
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit71de02544e7e755108cb45b07bd85d3e::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit71de02544e7e755108cb45b07bd85d3e::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit71de02544e7e755108cb45b07bd85d3e::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb205e12c575fd3f4f27cdb3cb9cd0591::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb205e12c575fd3f4f27cdb3cb9cd0591::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitb205e12c575fd3f4f27cdb3cb9cd0591::$classMap;
 
         }, null, ClassLoader::class);
     }

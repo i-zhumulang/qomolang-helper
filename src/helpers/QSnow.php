@@ -1,13 +1,14 @@
 <?php
 // +----------------------------------------------------------------------
-// | 
+// | 雪花算法,生成分布式ID
 // +----------------------------------------------------------------------
 // | Copyright © 2017 版权 All Rights Reserved.
 // +----------------------------------------------------------------------
 // | Author: 吴荣超
 // +----------------------------------------------------------------------
-// | Date  : 2023-03-22 10:36
+// | Date  : 2023-06-26 17:39
 // +----------------------------------------------------------------------
+declare(strict_types=1);
 
 namespace Qomolang\Helper\helpers;
 
@@ -16,7 +17,7 @@ namespace Qomolang\Helper\helpers;
  *
  * @package Qomolang\Helper\helpers
  * @author 吴荣超
- * @date   2023-03-22 10:36
+ * @date   2023-06-26 17:39
  */
 final class QSnow
 {
@@ -27,11 +28,33 @@ final class QSnow
     public static int $machineId = 1;
 
     /**
+     * QSnow constructor.
+     *
+     * @author 吴荣超
+     * @date   2023-06-26 17:39
+     */
+    private function __construct()
+    {
+
+    }
+
+    /**
+     * __clone
+     *
+     * @author 吴荣超
+     * @date   2023-06-26 17:39
+     */
+    private function __clone()
+    {
+
+    }
+
+    /**
      * machineId
      *
      * @param $mId
      * @author 吴荣超
-     * @date   2023-02-03 20:58
+     * @date   2023-06-26 17:39
      */
     public static function machineId($mId)
     {
@@ -43,7 +66,7 @@ final class QSnow
      *
      * @return float|int
      * @author 吴荣超
-     * @date   2023-02-03 20:59
+     * @date   2023-06-26 17:40
      */
     public static function generate()
     {
@@ -83,7 +106,7 @@ final class QSnow
      * @param $particle
      * @return float|int
      * @author 吴荣超
-     * @date   2023-02-03 20:59
+     * @date   2023-06-26 17:40
      */
     public static function timeFromParticle($particle)
     {

@@ -1,22 +1,23 @@
 <?php
 // +----------------------------------------------------------------------
-// | 
+// | 统一返回结果处理
 // +----------------------------------------------------------------------
 // | Copyright © 2017 版权 All Rights Reserved.
 // +----------------------------------------------------------------------
 // | Author: 吴荣超
 // +----------------------------------------------------------------------
-// | Date  : 2023-03-22 10:23
+// | Date  : 2023-06-26 17:35
 // +----------------------------------------------------------------------
+declare(strict_types=1);
 
 namespace Qomolang\Helper\helpers;
 
 /**
  * Class QResult
  *
- * @package helpers
+ * @package Os\Helper\helper
  * @author 吴荣超
- * @date   2023-03-22 10:23
+ * @date   2023-06-26 17:35
  */
 final class QResult
 {
@@ -30,28 +31,28 @@ final class QResult
     /**
      * @var string
      * @author 吴荣超
-     * @date   2023-03-22 10:24
+     * @date   2023-06-26 17:36
      */
     private static string $flag = 'Success';
 
     /**
      * @var int
      * @author 吴荣超
-     * @date   2023-03-22 10:24
+     * @date   2023-06-26 17:36
      */
     private static int $code = 200;
 
     /**
      * @var string
      * @author 吴荣超
-     * @date   2023-03-22 10:24
+     * @date   2023-06-26 17:36
      */
     private static string $msg = '';
 
     /**
      * @var array
      * @author 吴荣超
-     * @date   2023-03-22 10:24
+     * @date   2023-06-26 17:36
      */
     private static array $data = [];
 
@@ -60,7 +61,7 @@ final class QResult
      *
      * @param string $flag
      * @author 吴荣超
-     * @date   2023-03-22 10:24
+     * @date   2023-06-26 17:36
      */
     public static function setFlag(string $flag): void
     {
@@ -72,7 +73,7 @@ final class QResult
      *
      * @return string
      * @author 吴荣超
-     * @date   2023-03-22 10:24
+     * @date   2023-06-26 17:36
      */
     public static function getFlag(): string
     {
@@ -84,7 +85,7 @@ final class QResult
      *
      * @param int $code
      * @author 吴荣超
-     * @date   2023-03-22 10:24
+     * @date   2023-06-26 17:36
      */
     public static function setCode(int $code): void
     {
@@ -96,7 +97,7 @@ final class QResult
      *
      * @return int
      * @author 吴荣超
-     * @date   2023-03-22 10:24
+     * @date   2023-06-26 17:36
      */
     public static function getCode(): int
     {
@@ -108,7 +109,7 @@ final class QResult
      *
      * @param string $msg
      * @author 吴荣超
-     * @date   2023-03-22 10:24
+     * @date   2023-06-26 17:36
      */
     public static function setMsg(string $msg = ''): void
     {
@@ -120,7 +121,7 @@ final class QResult
      *
      * @return string
      * @author 吴荣超
-     * @date   2023-03-22 10:24
+     * @date   2023-06-26 17:36
      */
     public static function getMsg(): string
     {
@@ -132,7 +133,7 @@ final class QResult
      *
      * @param array $data
      * @author 吴荣超
-     * @date   2023-02-11 13:06
+     * @date   2023-06-26 17:36
      */
     public static function setData(array $data): void
     {
@@ -144,7 +145,7 @@ final class QResult
      *
      * @return array
      * @author 吴荣超
-     * @date   2023-02-11 13:06
+     * @date   2023-06-26 17:36
      */
     public static function getData(): array
     {
@@ -156,7 +157,7 @@ final class QResult
      *
      * @return array
      * @author 吴荣超
-     * @date   2023-02-11 13:06
+     * @date   2023-06-26 17:36
      */
     public static function send(): array
     {
@@ -175,7 +176,7 @@ final class QResult
      * @param array $data
      * @return array
      * @author 吴荣超
-     * @date   2023-02-11 13:07
+     * @date   2023-06-26 17:36
      */
     public static function success($value = null, array $data = [])
     {
@@ -199,7 +200,7 @@ final class QResult
      * @param array $data
      * @return array
      * @author 吴荣超
-     * @date   2023-02-11 13:07
+     * @date   2023-06-26 17:37
      */
     public static function failure($value = null, array $data = [])
     {

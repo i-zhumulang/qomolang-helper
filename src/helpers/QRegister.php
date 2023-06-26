@@ -1,13 +1,14 @@
 <?php
 // +----------------------------------------------------------------------
-// | 
+// | 注册树
 // +----------------------------------------------------------------------
 // | Copyright © 2017 版权 All Rights Reserved.
 // +----------------------------------------------------------------------
 // | Author: 吴荣超
 // +----------------------------------------------------------------------
-// | Date  : 2023-03-22 10:38
+// | Date  : 2023-06-26 17:37
 // +----------------------------------------------------------------------
+declare(strict_types=1);
 
 namespace Qomolang\Helper\helpers;
 
@@ -16,14 +17,14 @@ namespace Qomolang\Helper\helpers;
  *
  * @package Qomolang\Helper\helpers
  * @author 吴荣超
- * @date   2023-03-22 10:38
+ * @date   2023-06-26 17:37
  */
 final class QRegister
 {
     /**
      * @var array 对象池
      * @author 吴荣超
-     * @date   2023-03-22 10:39
+     * @date   2023-06-26 17:38
      */
     private static array $objPool = [];
 
@@ -34,7 +35,7 @@ final class QRegister
      * @param array $vars
      * @return mixed
      * @author 吴荣超
-     * @date   2023-03-22 10:39
+     * @date   2023-06-26 17:38
      */
     public static function get(string $class, $vars = [])
     {

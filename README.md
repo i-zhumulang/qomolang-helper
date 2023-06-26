@@ -1,2 +1,2 @@
-# qomolang-helper
- qomolang-helper
+# os-helper
+Qomolang OS project helper

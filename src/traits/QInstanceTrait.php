@@ -6,30 +6,36 @@
 // +----------------------------------------------------------------------
 // | Author: 吴荣超
 // +----------------------------------------------------------------------
-// | Date  : 2023-03-22 10:52
+// | Date  : 2023-06-26 17:50
 // +----------------------------------------------------------------------
+declare(strict_types=1);
 
-namespace Qomolang\Helper\traits;
+namespace Os\Helper\traits;
 
 use Exception;
 
 /**
  * Trait QInstanceTrait
- * @package Qomolang\Helper\traits
+ * @package Os\Helper\traits
  * @author 吴荣超
- * @date   2023-03-22 10:52
+ * @date   2023-06-26 17:50
  */
 trait QInstanceTrait
 {
     /**
-     * @var null|static 实例对象
+     * @var null
+     * @author 吴荣超
+     * @date   2023-06-26 17:50
      */
     protected static $instance = null;
 
     /**
      * 获取示例
+     *
      * @param array $options 实例配置
-     * @return static
+     * @return QInstanceTrait|null
+     * @author 吴荣超
+     * @date   2023-06-26 17:51
      */
     public static function instance($options = [])
     {
@@ -39,11 +45,21 @@ trait QInstanceTrait
     }
 
     /**
-     * 静态调用
-     * @param string $method 调用方法
-     * @param array  $params 调用参数
+     *
+     * @param string $method
+     * @param array  $params
      * @return mixed
      * @throws Exception
+     */
+    /**
+     * 静态调用
+     *
+     * @param string $method 调用方法
+     * @param array $params 调用参数
+     * @return mixed
+     * @throws Exception
+     * @author 吴荣超
+     * @date   2023-06-26 17:51
      */
     public static function __callStatic($method, array $params)
     {

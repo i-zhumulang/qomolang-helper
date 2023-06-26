@@ -6,19 +6,22 @@
 // +----------------------------------------------------------------------
 // | Author: 吴荣超
 // +----------------------------------------------------------------------
-// | Date  : 2023-03-22 10:41
+// | Date  : 2023-06-26 17:53
 // +----------------------------------------------------------------------
+declare(strict_types=1);
 
-namespace Qomolang\Helper\exceptions;
+namespace Os\Helper\exceptions;
+
+use Exception;
 
 /**
  * Class QException
  *
- * @package Qomolang\Helper\exceptions
+ * @package Os\Helper\exceptions
  * @author 吴荣超
- * @date   2023-03-22 10:41
+ * @date   2023-06-26 17:53
  */
-final class QException extends \Exception
+final class QException extends Exception
 {
 
 }
