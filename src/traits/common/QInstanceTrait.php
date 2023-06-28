@@ -10,13 +10,13 @@
 // +----------------------------------------------------------------------
 declare(strict_types=1);
 
-namespace Qomolang\Helper\traits;
+namespace Qomolang\Helper\traits\common;
 
 use Exception;
 
 /**
  * Trait QInstanceTrait
- * @package Qomolang\Helper\traits
+ * @package Qomolang\Helper\traits\common
  * @author 吴荣超
  * @date   2023-06-26 17:50
  */
